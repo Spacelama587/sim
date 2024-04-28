@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+    <!-- icons -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <!-- gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+  <link rel="stylesheet" href="./new.css">
+</head>
+<body>
+
+  <div class="navbar">
+    <nav>
+      <ul>
+        <li>My Story</li>
+        <li>race videos</li>
+        <li>news update</li>
+      </ul>
+    </nav>
+  </div>
+
+
+  
+  <div class="content">
+    <!-- <div class="bg-black  bg-opacity-75 p-6 rounded-lg shadow-lg textName ">
+      <h1 class="text-3xl font-bold mb-4">
+          <span class="text-green-700">Renzo</span>
+          <span class="text-yellow-500">Tjon</span>
+          <span class="text-red-600">A</span>
+          <span class="text-green-700">Joe</span>
+      </h1>
+  </div> -->
+    <div class="slide-wrapper">
+      <div class="slide-item">
+        <img src="img/1.jpg" class="slide-item__image">
+      </div>
+      <div class="slide-item">
+        <img src="img/2.jpg" class="slide-item__image">
+      </div>
+      <div class="slide-item">
+        <img src="img/3.jpg" class="slide-item__image">
+      </div>					
+    </div>
+    <button class="scene-nav scene-nav--prev" data-nav="previous"><svg class="icon icon--arrow-nav-prev"><use xlink:href="#icon-arrow-nav"></use></svg></button>
+    <button class="scene-nav scene-nav--next" data-nav="next"><svg class="icon icon--arrow-nav-next"><use xlink:href="#icon-arrow-nav"></use></svg></button>
+  </div>
+
+
+  <section class="about">
+    
+    <div class="px-8 py-24 mx-auto md:px-12 lg:px-32 max-w-7xl">
+      <div>
+        <h1 class="text-4xl font-semibold tracking-tighter text-gray-900 lg:text-6xl text-balance">
+          Fastest swimmer in Surinamese history .
+          <span class="text-gray-600">in the 50 m and 100 m freestyle category</span>
+        </h1>
+        <p class="mt-4 text-base font-medium text-gray-500 text-balance">
+          Suriname-born Renzo Tjon-A-Joe is his country's fastest swimmer to date. He made his first appearance on the world stage at the age of 18, as a member of the Surinamese selection for the 2013 Junior Worlds in Dubai, UAE. In Dubai, he was a finalist in the 50 m freestyle. He went on to be the most successful athlete from Suriname in 2013 and 2015 and was named 2013 and 2015 Male Athlete of the Year.
+        </p>
+      </div>
+      <div class="space-y-2">
+        <div class="grid gap-2 mt-12 lg:grid-flow-col-dense lg:max-w-7xl lg:mx-auto lg:grid lg:grid-cols-3">
+          <div class="max-w-lg min-w-full mx-auto">
+            <div class="flex h-full">
+              <div class="flex flex-col justify-center p-8 border bg-emerald-300 rounded-3xl max-w-none">
+                <h2 class="font-bold text-4xl text-gray-900">
+                  Lorem ipsum dolor sit amet, consectetur
+                </h2>
+                <p class="mt-4 text-xl font-medium text-white text-pretty">
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="lg:col-span-2">
+            <div>
+              <div class="relative h-full p-2 overflow-hidden border rounded-3xl">
+                <img src="./img/about.jpg" class="object-cover h-1/5 border shadow-2xl rounded-2xl">
+              </div>
+            </div>
+          </div>
+        </div>
+
+          <h2 class="text-center text-4xl mt-5">
+            Acheivements
+          </h2>
+        <section>
+          <!-- Container -->
+          <div class="px-5 py-16 md:px-10 md:py-24 lg:py-32">
+            <!-- Component -->
+            <div class="mx-auto flex w-full max-w-[798px] flex-col rounded-[36px] bg-black py-8 text-white">
+              <!-- Facts Div -->
+              <div class="grid h-full w-full grid-cols-1 gap-5 sm:grid-cols-2 md:grid-cols-4 md:gap-0">
+                <!-- Fact Item -->
+                <div class="flex flex-col items-center justify-center lg:border-r lg:border-solid lg:border-r-[#c3c0c04d]">
+                  <h4 class="mb-4 text-2xl font-bold md:text-3xl">20+</h4>
+                  <p class="text-sm">National Representations</p>
+                </div>
+                <!-- Fact Item -->
+                <div class="flex flex-col items-center justify-center lg:border-r lg:border-solid lg:border-r-[#c3c0c04d]">
+                  <h4 class="mb-4 text-2xl font-bold md:text-3xl">45</h4>
+                  <p class="text-sm">Medals</p>
+                </div>
+                <!-- Fact Item -->
+                <div class="flex flex-col items-center justify-center lg:border-r lg:border-solid lg:border-r-[#c3c0c04d]">
+                  <h4 class="mb-4 text-2xl font-bold md:text-3xl">5+</h4>
+                  <p class="text-sm">National Records</p>
+                </div>
+                <!-- Fact Item -->
+                <div class="flex flex-col items-center justify-center lg:border-r lg:border-solid lg:border-r-[#c3c0c04d]">
+                  <h4 class="mb-4 text-2xl font-bold md:text-3xl">#1</h4>
+                  <p class="text-sm">Swimmer in Suriname</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        <div class="grid gap-2 lg:grid-flow-col-dense lg:max-w-7xl lg:mx-auto lg:grid lg:grid-cols-3">
+          <div class="max-w-lg min-w-full mx-auto lg:col-start-3">
+            <div class="flex h-full">
+              <div class="flex flex-col justify-center p-8 border bg-blue-500 rounded-3xl max-w-none">
+                <h2 class="font-bold text-4xl text-white">
+                  Lorem ipsum dolor sit amet, consectetur
+                </h2>
+                <p class="mt-4 text-sm font-medium text-white text-pretty">
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="lg:col-start-1 lg:col-span-2">
+            <div>
+              <div class="relative h-full p-2 overflow-hidden border rounded-3xl">
+                <img src="./img/about2.jpg" class="object-cover h-full border shadow-2xl rounded-2xl">
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        
+<header class="bg-[#171715] text-white">
+  <!-- Container -->
+  <div class="mx-auto w-full max-w-7xl px-5 py-12 md:px-10 md:py-16 lg:py-20">
+    <!-- Component -->
+    <div class="flex flex-col gap-5 md:flex-row">
+      <h2 class="min-w-[auto] font-[Gabarito,_sans-serif] text-3xl font-medium md:text-5xl lg:min-w-[320px]">Personal bests</h2>
+      <!-- Experiences Content -->
+      <div class="flex flex-col gap-12 md:gap-16 lg:gap-20">
+        <div class="p-2 sm:px-2">
+          <h3 class="mb-7 text-2xl font-medium md:text-3xl">Mexico, Veracruz, 2014 Central American& Caribbean Games, 50 m butterfly bronze medal,</h3>
+          <p class="mb-7 text-lg text-[#acacaf]">Lorem ipsum dolor sit amet, consectetur adipiscing elit,  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p class="mb-7 text-lg text-white">January 04, 2020 &nbsp;to &nbsp;May 24, 2021</p>
+        </div>
+        <div class="p-2">
+          <h3 class="mb-7 text-2xl font-medium md:text-3xl">50 m freestyle silver medal, 100 m freestyle 4th place, all national records</h3>
+          <p class="mb-7 text-lg text-[#acacaf]">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,</p>
+          <p class="mb-7 text-lg text-white">January 04, 2020 &nbsp;to &nbsp;May 24, 2021</p>
+        </div>
+        <div class="p-2">
+          <h3 class="mb-7 text-2xl font-medium md:text-3xl">Chile, 2014 Junior South American Championships, 50 m freestyle finalist, silver medal</h3>
+          <p class="mb-7 text-lg text-[#acacaf]">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti </p>
+          <p class="mb-7 text-lg text-white">January 04, 2020 &nbsp;to &nbsp;May 24, 2021</p>
+        </div>
+        <div class="p-2">
+          <h3 class="mb-7 text-2xl font-medium md:text-3xl">Dubai, 2013 Junior World Championship, 50 m freestyle finalist</h3>
+          <p class="mb-7 text-lg text-[#acacaf]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+          <p class="mb-7 text-lg text-white">January 04, 2020 &nbsp;to &nbsp;May 24, 2021</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+
+
+        <div class="grid gap-2 lg:grid-flow-col-dense lg:max-w-7xl lg:mx-auto lg:grid lg:grid-cols-3">
+          <div class="max-w-lg min-w-full mx-auto">
+            <div class="flex h-full">
+              <div class="flex flex-col justify-center p-8 border bg-gray-50 rounded-3xl max-w-none">
+                <h2 class="font-bold text-4xl text-gray-900">
+                  Lorem ipsum dolor sit amet, consectetur
+                <p class="mt-4 text-sm font-medium text-gray-500 text-pretty">
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="lg:col-span-2 ">
+            <div>
+              <div class="relative h-full p-2 overflow-hidden border rounded-3xl">
+                <img src="./img/about3.jpg" class="object-cover h-full border shadow-2xl rounded-2xl">
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <section>
+          <!-- Container -->
+          <div class="mx-auto w-full max-w-7xl px-5 py-16 md:px-10 md:py-24 lg:py-32">
+            <!-- Component -->
+            <div class="flex flex-col items-center">
+              <!-- Heading Div -->
+              <div class="mb-8 max-w-[800px] text-center md:mb-12 lg:mb-16">
+                <h2 class="text-3xl font-semibold capitalize md:text-5xl"><span class="bg-[url('https://assets.website-files.com/63904f663019b0d8edf8d57c/639156ce1c70c97aeb755c8a_Rectangle%2010%20(1).svg')] bg-cover bg-center px-4 text-white">news</span>
+                </h2>
+                <p class="mx-auto mt-4 max-w-[528px] text-[#636262]">Lorem ipsum dolor sit amet elit ut aliquam</p>
+              </div>
+              <!-- Blog Div -->
+              <div class="mb-8 grid w-full grid-cols-1 md:mb-12 md:grid-cols-3 md:gap-4 lg:mb-16">
+                <!-- Blog Item -->
+                <a href="#" class="relative mb-12 flex h-[560px] max-w-full grid-cols-1 flex-col gap-4 overflow-hidden rounded-xl border border-solid border-black bg-white font-bold text-black [box-shadow:rgb(0,_0,_0)_9px_9px] [grid-area:1/1/2/2] md:[grid-area:1/1/2/4]">
+                  <div class="absolute bottom-0 left-0 right-0 top-auto z-20 flex w-full max-w-[800px] flex-col items-start justify-start rounded-xl bg-white p-6 md:bottom-2 md:left-2">
+                    <p class="mb-4 rounded-md bg-white py-1.5 text-sm font-semibold text-[#1353fe]">CATEGORY NAME</p>
+                    <p class="mb-4 text-xl font-bold md:text-2xl">Diam cursus a ornare massa orci sodales habitasse gravida bibendum.</p>
+                    <div class="flex items-start max-[991px]:flex-col lg:items-center">
+                      <p class="text-sm text-[#636262]">Laila Bahar</p>
+                      <p class="ml-2 mr-2 text-sm text-[#636262] max-[991px]:hidden">-</p>
+                      <p class="text-sm text-[#636262]">6 mins read</p>
+                    </div>
+                  </div>
+                  <img src="./blog.jpg" alt="" class="inline-block h-full w-full object-cover" />
+                </a>
+             
+              </div>
+              
+            </div>
+          </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="grid gap-2 mt-2 text-center md:grid-cols-3 mt-12">
+          <div>
+            <div class="p-2 overflow-hidden border rounded-3xl">
+              <img src="./img/aboout4.jpg" alt="#_" class="w-full h-full mx-auto rounded-2xl">
+            </div>
+            <div class="mt-4">
+              <p class="font-medium text-gray-900">Lorem ipsum dolor sit amet</p>
+              <p class="mt-2 text-sm text-gray-500">
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in.
+              </p>
+            </div>
+          </div>
+          <div>
+            <div class="p-2 overflow-hidden border rounded-3xl">
+              <img src="./img/about5.jpg" alt="#_" class="w-full h-full mx-auto rounded-2xl">
+            </div>
+            <div class="px-8 mt-4">
+              <p class="font-medium text-gray-900">Lorem ipsum dolor sit amet</p>
+              <p class="mt-2 text-sm text-gray-500">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
+              </p>
+            </div>
+          </div>
+          <div>
+            <div class="p-2 overflow-hidden border rounded-3xl">
+              <img src="./img/about6.jpg" alt="#_" class="w-full h-full mx-auto rounded-2xl">
+            </div>
+            <div class="px-8 mt-4">
+              <p class="font-medium text-gray-900">Lorem ipsum dolor sit amet</p>
+              <p class="mt-2 text-sm text-gray-500">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+  <main class="relative h-3/4 flex flex-col justify-center bg-slate-50 overflow-hidden">
+    <div class="w-full max-w-6xl mx-auto px-4 md:px-6 py-24">
+        <div class="flex justify-center">
+
+            <!-- Modal video component -->
+            <div class="[&_[x-cloak]]:hidden" x-data="{ modalOpen: false }">
+        
+                <!-- Video thumbnail -->
+                <button class="relative flex justify-center items-center focus:outline-none focus-visible:ring focus-visible:ring-indigo-300 rounded-3xl group" @click="modalOpen = true" aria-controls="modal" aria-label="Watch the video">
+                    <img class="rounded-3xl shadow-2xl transition-shadow duration-300 ease-in-out" src="./thung.jpg" width="768" height="432" alt="Modal video thumbnail" />
+                    <!-- Play icon -->
+                    <svg class="absolute pointer-events-none group-hover:scale-110 transition-transform duration-300 ease-in-out" xmlns="http://www.w3.org/2000/svg" width="72" height="72">
+                        <circle class="fill-white" cx="36" cy="36" r="36" fill-opacity=".8" />
+                        <path class="fill-indigo-500 drop-shadow-2xl" d="M44 36a.999.999 0 0 0-.427-.82l-10-7A1 1 0 0 0 32 29V43a.999.999 0 0 0 1.573.82l10-7A.995.995 0 0 0 44 36V36c0 .001 0 .001 0 0Z" />
+                    </svg>
+                </button>
+                <!-- End: Video thumbnail -->
+            
+                <!-- Modal backdrop -->
+                <div
+                    class="fixed inset-0 z-[99999] bg-black bg-opacity-50 transition-opacity"
+                    x-show="modalOpen"
+                    x-transition:enter="transition ease-out duration-200"
+                    x-transition:enter-start="opacity-0"
+                    x-transition:enter-end="opacity-100"
+                    x-transition:leave="transition ease-out duration-100"
+                    x-transition:leave-start="opacity-100"
+                    x-transition:leave-end="opacity-0" 
+                    aria-hidden="true"
+                    x-cloak
+                ></div>
+                <!-- End: Modal backdrop -->
+            
+                <!-- Modal dialog -->
+                <div
+                    id="modal"
+                    class="fixed inset-0 z-[99999] flex px-4 md:px-6 py-6"
+                    role="dialog"
+                    aria-modal="true"
+                    x-show="modalOpen"
+                    x-transition:enter="transition ease-out duration-300"
+                    x-transition:enter-start="opacity-0 scale-75"
+                    x-transition:enter-end="opacity-100 scale-100"
+                    x-transition:leave="transition ease-out duration-200"
+                    x-transition:leave-start="opacity-100 scale-100"
+                    x-transition:leave-end="opacity-0 scale-75"
+                    x-cloak
+                >
+                    <div class="max-w-5xl mx-auto h-full flex items-center">
+                        <div class="w-full max-h-full rounded-3xl shadow-2xl aspect-video bg-black overflow-hidden" @click.outside="modalOpen = false" @keydown.escape.window="modalOpen = false">
+                            <video x-init="$watch('modalOpen', value => value ? $el.play() : $el.pause())" width="1920" height="1080" loop controls>
+                                <source src="./Men's 100m Freestyle Final _ Tokyo Replays.mp4" type="video/mp4" />
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                </div>
+                <!-- End: Modal dialog -->
+            
+            </div>
+            <!-- End: Modal video component -->
+
+        </div>
+    </div>
+</main>
+  <main class="relative h-3/4 flex flex-col justify-center bg-slate-50 overflow-hidden">
+    <div class="w-full max-w-6xl mx-auto px-4 md:px-6 py-24">
+        <div class="flex justify-center">
+
+            <!-- Modal video component -->
+            <div class="[&_[x-cloak]]:hidden" x-data="{ modalOpen: false }">
+        
+                <!-- Video thumbnail -->
+                <button class="relative flex justify-center items-center focus:outline-none focus-visible:ring focus-visible:ring-indigo-300 rounded-3xl group" @click="modalOpen = true" aria-controls="modal" aria-label="Watch the video">
+                    <img class="rounded-3xl shadow-2xl transition-shadow duration-300 ease-in-out" src="./thung.jpg" width="768" height="432" alt="Modal video thumbnail" />
+                    <!-- Play icon -->
+                    <svg class="absolute pointer-events-none group-hover:scale-110 transition-transform duration-300 ease-in-out" xmlns="http://www.w3.org/2000/svg" width="72" height="72">
+                        <circle class="fill-white" cx="36" cy="36" r="36" fill-opacity=".8" />
+                        <path class="fill-indigo-500 drop-shadow-2xl" d="M44 36a.999.999 0 0 0-.427-.82l-10-7A1 1 0 0 0 32 29V43a.999.999 0 0 0 1.573.82l10-7A.995.995 0 0 0 44 36V36c0 .001 0 .001 0 0Z" />
+                    </svg>
+                </button>
+                <!-- End: Video thumbnail -->
+            
+                <!-- Modal backdrop -->
+                <div
+                    class="fixed inset-0 z-[99999] bg-black bg-opacity-50 transition-opacity"
+                    x-show="modalOpen"
+                    x-transition:enter="transition ease-out duration-200"
+                    x-transition:enter-start="opacity-0"
+                    x-transition:enter-end="opacity-100"
+                    x-transition:leave="transition ease-out duration-100"
+                    x-transition:leave-start="opacity-100"
+                    x-transition:leave-end="opacity-0" 
+                    aria-hidden="true"
+                    x-cloak
+                ></div>
+                <!-- End: Modal backdrop -->
+            
+                <!-- Modal dialog -->
+                <div
+                    id="modal"
+                    class="fixed inset-0 z-[99999] flex px-4 md:px-6 py-6"
+                    role="dialog"
+                    aria-modal="true"
+                    x-show="modalOpen"
+                    x-transition:enter="transition ease-out duration-300"
+                    x-transition:enter-start="opacity-0 scale-75"
+                    x-transition:enter-end="opacity-100 scale-100"
+                    x-transition:leave="transition ease-out duration-200"
+                    x-transition:leave-start="opacity-100 scale-100"
+                    x-transition:leave-end="opacity-0 scale-75"
+                    x-cloak
+                >
+                    <div class="max-w-5xl mx-auto h-full flex items-center">
+                        <div class="w-full max-h-full rounded-3xl shadow-2xl aspect-video bg-black overflow-hidden" @click.outside="modalOpen = false" @keydown.escape.window="modalOpen = false">
+                            <video x-init="$watch('modalOpen', value => value ? $el.play() : $el.pause())" width="1920" height="1080" loop controls>
+                                <source src="./Men's 100m Freestyle Final _ Tokyo Replays.mp4" type="video/mp4" />
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                </div>
+                <!-- End: Modal dialog -->
+            
+            </div>
+            <!-- End: Modal video component -->
+
+        </div>
+    </div>
+</main>
+  <main class="relative h-3/4 flex flex-col justify-center bg-slate-50 overflow-hidden">
+    <div class="w-full max-w-6xl mx-auto px-4 md:px-6 py-24">
+        <div class="flex justify-center">
+
+            <!-- Modal video component -->
+            <div class="[&_[x-cloak]]:hidden" x-data="{ modalOpen: false }">
+        
+                <!-- Video thumbnail -->
+                <button class="relative flex justify-center items-center focus:outline-none focus-visible:ring focus-visible:ring-indigo-300 rounded-3xl group" @click="modalOpen = true" aria-controls="modal" aria-label="Watch the video">
+                    <img class="rounded-3xl shadow-2xl transition-shadow duration-300 ease-in-out" src="./thung.jpg" width="768" height="432" alt="Modal video thumbnail" />
+                    <!-- Play icon -->
+                    <svg class="absolute pointer-events-none group-hover:scale-110 transition-transform duration-300 ease-in-out" xmlns="http://www.w3.org/2000/svg" width="72" height="72">
+                        <circle class="fill-white" cx="36" cy="36" r="36" fill-opacity=".8" />
+                        <path class="fill-indigo-500 drop-shadow-2xl" d="M44 36a.999.999 0 0 0-.427-.82l-10-7A1 1 0 0 0 32 29V43a.999.999 0 0 0 1.573.82l10-7A.995.995 0 0 0 44 36V36c0 .001 0 .001 0 0Z" />
+                    </svg>
+                </button>
+                <!-- End: Video thumbnail -->
+            
+                <!-- Modal backdrop -->
+                <div
+                    class="fixed inset-0 z-[99999] bg-black bg-opacity-50 transition-opacity"
+                    x-show="modalOpen"
+                    x-transition:enter="transition ease-out duration-200"
+                    x-transition:enter-start="opacity-0"
+                    x-transition:enter-end="opacity-100"
+                    x-transition:leave="transition ease-out duration-100"
+                    x-transition:leave-start="opacity-100"
+                    x-transition:leave-end="opacity-0" 
+                    aria-hidden="true"
+                    x-cloak
+                ></div>
+                <!-- End: Modal backdrop -->
+            
+                <!-- Modal dialog -->
+                <div
+                    id="modal"
+                    class="fixed inset-0 z-[99999] flex px-4 md:px-6 py-6"
+                    role="dialog"
+                    aria-modal="true"
+                    x-show="modalOpen"
+                    x-transition:enter="transition ease-out duration-300"
+                    x-transition:enter-start="opacity-0 scale-75"
+                    x-transition:enter-end="opacity-100 scale-100"
+                    x-transition:leave="transition ease-out duration-200"
+                    x-transition:leave-start="opacity-100 scale-100"
+                    x-transition:leave-end="opacity-0 scale-75"
+                    x-cloak
+                >
+                    <div class="max-w-5xl mx-auto h-full flex items-center">
+                        <div class="w-full max-h-full rounded-3xl shadow-2xl aspect-video bg-black overflow-hidden" @click.outside="modalOpen = false" @keydown.escape.window="modalOpen = false">
+                            <video x-init="$watch('modalOpen', value => value ? $el.play() : $el.pause())" width="1920" height="1080" loop controls>
+                                <source src="./Men's 100m Freestyle Final _ Tokyo Replays.mp4" type="video/mp4" />
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                </div>
+                <!-- End: Modal dialog -->
+            
+            </div>
+            <!-- End: Modal video component -->
+
+        </div>
+    </div>
+</main>
+
+</div>
+
+
+
+
+
+<section>
+  
+  <div class="px-8 py-24 mx-auto md:px-12 lg:px-32 max-w-7xl">
+    <div class="grid items-center grid-cols-1 py-12 lg:grid-cols-4 border-y md:grid-cols-2 border-onyx-800 lg:gap-24">
+      <div class="mx-auto col-span-full lg:col-span-1 lg:max-w-none lg:mr-auto">
+        <p class="text-xl text-gray-500">
+          Some of the mazing charities we have worked with
+        </p>
+      </div>
+      <div class="flex flex-wrap justify-between mt-12 lg:mt-0 md:col-span-3">
+        <div class="flex justify-center col-span-1 px-8">
+          <img class="max-h-12" src="../images/logos/1.svg" alt="logo">
+        </div>
+        <div class="flex justify-center col-span-1 px-8">
+          <img class="max-h-12" src="../images/logos/2.svg" alt="logo">
+        </div>
+        <div class="flex justify-center col-span-1 px-8">
+          <img class="max-h-12" src="../images/logos/3.svg" alt="logo">
+        </div>
+        <div class="flex justify-center col-span-1 px-8">
+          <img class="max-h-12" src="../images/logos/4.svg" alt="logo">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<section class="relative flex flex-col items-center justify-center overflow-hidden bg-gray-950">
+  <svg class="absolute w-full h-full lg:w-auto lg:h-auto" viewBox="0 0 1681 1268" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g filter="url(#filter0_f_1444_23691)">
+      <path d="M797.509 1376.37C1005.5 1320.64 1187.74 1228.6 1313.76 1120.32C1433.75 1017.23 1529.96 873.405 1489 720.528C1448.03 567.65 1292.8 491.201 1137.34 461.913C974.063 431.154 770.218 442.565 562.23 498.295C354.242 554.025 172.002 646.065 45.9808 754.342C-74.01 857.437 -170.22 1001.26 -129.257 1154.14C-88.2933 1307.01 66.9384 1383.46 222.401 1412.75C385.677 1443.51 589.521 1432.1 797.509 1376.37Z" stroke="url(#paint0_angular_1444_23691)" stroke-width="200"></path>
+    </g>
+    <g filter="url(#filter1_f_1444_23691)">
+      <path d="M797.501 1376.37C1005.49 1320.64 1187.73 1228.6 1313.75 1120.32C1433.74 1017.23 1529.95 873.405 1488.99 720.528C1448.02 567.65 1292.79 491.201 1137.33 461.913C974.055 431.154 770.21 442.565 562.222 498.295C354.234 554.025 171.994 646.065 45.973 754.342C-74.0178 857.437 -170.228 1001.26 -129.264 1154.14C-88.3011 1307.01 66.9306 1383.46 222.393 1412.75C385.669 1443.51 589.513 1432.1 797.501 1376.37Z" stroke="url(#paint1_angular_1444_23691)" stroke-width="200"></path>
+    </g>
+    <g filter="url(#filter2_f_1444_23691)">
+      <path d="M1272.85 196.642C1117.47 41.2578 943.78 -76.6173 783.354 -138.009C703.324 -168.635 619.849 -187.785 539.88 -185.623C458.828 -183.431 372.728 -158.586 306.228 -92.0857C239.728 -25.5856 214.882 60.5139 212.691 141.566C210.529 221.535 229.679 305.011 260.305 385.04C321.696 545.467 439.571 719.156 594.956 874.54C750.34 1029.92 924.03 1147.8 1084.46 1209.19C1164.49 1239.82 1247.96 1258.97 1327.93 1256.81C1408.98 1254.61 1495.08 1229.77 1561.58 1163.27C1628.08 1096.77 1652.93 1010.67 1655.12 929.616C1657.28 849.648 1638.13 766.172 1607.51 686.142C1546.11 525.716 1428.24 352.027 1272.85 196.642Z" stroke="url(#paint2_angular_1444_23691)" stroke-width="300"></path>
+    </g>
+    <g style="mix-blend-mode: overlay" filter="url(#filter3_f_1444_23691)">
+      <path d="M1018.52 1435.59C1226.51 1379.86 1408.75 1287.82 1534.77 1179.55C1654.76 1076.45 1750.97 932.629 1710.01 779.751C1669.05 626.874 1513.82 550.425 1358.35 521.137C1195.08 490.377 991.234 501.788 783.246 557.519C575.257 613.249 393.017 705.289 266.996 813.565C147.006 916.661 50.7955 1060.48 91.759 1213.36C132.722 1366.24 287.954 1442.69 443.417 1471.98C606.692 1502.73 810.537 1491.32 1018.52 1435.59Z" stroke="url(#paint3_angular_1444_23691)" stroke-width="200"></path>
+    </g>
+    <defs>
+      <filter id="filter0_f_1444_23691" x="-439.07" y="145.188" width="2237.88" height="1584.29" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+        <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feBlend>
+        <feGaussianBlur stdDeviation="100" result="effect1_foregroundBlur_1444_23691"></feGaussianBlur>
+      </filter>
+      <filter id="filter1_f_1444_23691" x="-259.078" y="325.188" width="1877.88" height="1224.29" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+        <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feBlend>
+        <feGaussianBlur stdDeviation="10" result="effect1_foregroundBlur_1444_23691"></feGaussianBlur>
+      </filter>
+      <filter id="filter2_f_1444_23691" x="-137.477" y="-535.788" width="2142.76" height="2142.76" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+        <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feBlend>
+        <feGaussianBlur stdDeviation="100" result="effect1_foregroundBlur_1444_23691"></feGaussianBlur>
+      </filter>
+      <filter id="filter3_f_1444_23691" x="-218.055" y="204.411" width="2237.88" height="1584.29" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+        <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feBlend>
+        <feGaussianBlur stdDeviation="100" result="effect1_foregroundBlur_1444_23691"></feGaussianBlur>
+      </filter>
+      <radialGradient id="paint0_angular_1444_23691" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(679.87 937.332) rotate(75) scale(354.525 737.669)">
+        <stop offset="0.140936" stop-color="#5840FA"></stop>
+        <stop offset="0.336288" stop-color="#BFDEF8"></stop>
+        <stop offset="0.44736" stop-color="#FF696A"></stop>
+        <stop offset="0.654315" stop-color="#FF696A"></stop>
+        <stop offset="0.806766" stop-color="#BFDEF8"></stop>
+        <stop offset="1" stop-color="#5840FA"></stop>
+      </radialGradient>
+      <radialGradient id="paint1_angular_1444_23691" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(679.862 937.332) rotate(75) scale(354.525 737.669)">
+        <stop offset="0.140936" stop-color="#5840FA"></stop>
+        <stop offset="0.336288" stop-color="#BFDEF8"></stop>
+        <stop offset="0.44736" stop-color="#FF696A"></stop>
+        <stop offset="0.654315" stop-color="#FF696A"></stop>
+        <stop offset="0.806766" stop-color="#BFDEF8"></stop>
+        <stop offset="1" stop-color="#5840FA"></stop>
+      </radialGradient>
+      <radialGradient id="paint2_angular_1444_23691" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(933.905 535.591) rotate(-45) scale(329.346 737.669)">
+        <stop offset="0.140936" stop-color="#5840FA"></stop>
+        <stop offset="0.336288" stop-color="#BFDEF8"></stop>
+        <stop offset="0.44736" stop-color="#FF696A"></stop>
+        <stop offset="0.654315" stop-color="#FF696A"></stop>
+        <stop offset="0.806766" stop-color="#BFDEF8"></stop>
+        <stop offset="1" stop-color="#5840FA"></stop>
+      </radialGradient>
+      <radialGradient id="paint3_angular_1444_23691" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(900.885 996.556) rotate(75) scale(354.525 737.669)">
+        <stop offset="0.140936" stop-color="#5840FA"></stop>
+        <stop offset="0.336288" stop-color="#BFDEF8"></stop>
+        <stop offset="0.44736" stop-color="#FF696A"></stop>
+        <stop offset="0.654315" stop-color="#FF696A"></stop>
+        <stop offset="0.806766" stop-color="#BFDEF8"></stop>
+        <stop offset="1" stop-color="#5840FA"></stop>
+      </radialGradient>
+    </defs>
+  </svg>
+  <div class="relative items-center px-8 py-12 mx-auto md:px-12 lg:px-32 max-w-7xl">
+    <div class="max-w-4xl mx-auto">
+      <span class="text-white"> Stats</span>
+      <h2 class="mt-6 text-3xl font-medium tracking-tight text-white lg:text-4xl mb-15">
+        National Records <span class="block text-white">
+          International competitions and other Data</span>
+      </h2>
+    </div>
+    <div class="relative overflow-x-auto mb-12 mt-15">
+      <table class="w-full text-sm text-left rtl:text-right text-gray-500 ">
+          <thead class="text-xs text-gray-700 uppercase bg-gray-50">
+              <tr>
+                  <th scope="col" class="px-6 py-3">
+                    Event
+                  </th>
+                  <th scope="col" class="px-6 py-3">
+                    Meet
+                  </th>
+                  <th scope="col" class="px-6 py-3">
+                      Location
+                  </th>
+                  <th scope="col" class="px-6 py-3">
+                    Time
+                  </th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr class="bg-white border-b ">
+                  <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                    100 m Freestyle
+                  </th>
+                  <td class="px-6 py-4">
+                    Swim Cup
+                  </td>
+                  <td class="px-6 py-4">
+                    Eindhoven, Netherlands
+                  </td>
+                  <td class="px-6 py-4">
+                    49.29
+                  </td>
+              </tr>
+              <tr class="bg-white border-b ">
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                  100 m Freestyle
+                </th>
+                <td class="px-6 py-4">
+                  Swim Cup
+                </td>
+                <td class="px-6 py-4">
+                  Eindhoven, Netherlands
+                </td>
+                <td class="px-6 py-4">
+                  49.29
+                </td>
+              </tr>
+              <tr class="bg-white ">
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                  100 m Freestyle
+                </th>
+                <td class="px-6 py-4">
+                  Swim Cup
+                </td>
+                <td class="px-6 py-4">
+                  Eindhoven, Netherlands
+                </td>
+                <td class="px-6 py-4">
+                  49.29
+                </td>
+              </tr>
+          </tbody>
+      </table>
+    </div>
+    
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+<div class="max-w-screen-lg mx-auto">
+  
+  <div class="flex flex-col md:flex-row items-center">
+      <!-- Image on the left -->
+      <div class="md:w-1/3 mb-4 md:mb-0">
+          <img src="./fomimg.jpg" alt="Contact Image" class="w-full h-auto rounded-lg shadow-md">
+      </div>
+      <!-- Contact form on the right -->
+      <div class="md:w-2/3 md:ml-8">
+          <h2 class="text-2xl font-bold mb-4">Contact Me</h2>
+          <form class="w-full">
+              <div class="mb-4">
+                  <label for="name" class="block text-gray-700 font-semibold mb-2">Name</label>
+                  <input type="text" id="name" name="name" class="w-full border-2 border-gray-300 p-2 rounded-md focus:outline-none focus:border-blue-500" placeholder="Enter your name" required>
+              </div>
+              <div class="mb-4">
+                  <label for="email" class="block text-gray-700 font-semibold mb-2">Email</label>
+                  <input type="email" id="email" name="email" class="w-full border-2 border-gray-300 p-2 rounded-md focus:outline-none focus:border-blue-500" placeholder="Enter your email" required>
+              </div>
+              <div class="mb-4">
+                  <label for="message" class="block text-gray-700 font-semibold mb-2">Message</label>
+                  <textarea id="message" name="message" rows="4" class="w-full border-2 border-gray-300 p-2 rounded-md focus:outline-none focus:border-blue-500" placeholder="Enter your message" required></textarea>
+              </div>
+              <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-md focus:outline-none focus:shadow-outline">Send Message</button>
+          </form>
+      </div>
+  </div>
+</div>
+  
+
+
+
+
+
+
+
+
+
+
+
+<footer>
+  <div class="px-8 py-12 mx-auto md:px-12 lg:px-32 max-w-7xl">
+    <div class="flex flex-col items-baseline space-y-6">
+      <div class="mx-auto">
+        <a href="/" class="mx-auto text-lg text-center">
+          🇸🇷
+        </a>
+      </div>
+      <div class="mx-auto" x-data="{ year: new Date().getFullYear() }">
+        <span class="mx-auto mt-2 text-sm font-medium text-gray-500">
+          Copyright © <span x-text="year">2024</span>
+          <a aria-label="Renzo Tjon-A-Joe" href="#_" class="mx-2 text-blue-500 hover:text-gray-500">Renzo Tjon-A-Joe</a>
+          Since 1995
+        </span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+
+  <script src="js/pixi.min.js"></script>
+  <script src="js/TweenMax.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/imagesloaded.pkgd.min.js"></script>
+
+  <script>
+    imagesLoaded(document.body, () => document.body.classList.remove('loading'));
+
+    var spriteImages 	= document.querySelectorAll( '.slide-item__image' );
+    var spriteImagesSrc = [];
+
+    for ( var i = 0; i < spriteImages.length; i++ ) {
+      var img = spriteImages[i];
+      spriteImagesSrc.push( img.getAttribute('src' ) );
+    }
+
+    var initCanvasSlideshow = new CanvasSlideshow({
+      sprites: spriteImagesSrc,
+      displacementImage: 'img/dmaps/2048x2048/clouds.jpg',
+      autoPlay: true,
+      autoPlaySpeed: [10, 3],
+      displaceScale: [200, 70]
+    });
+  </script>
+</body>
+</html>
